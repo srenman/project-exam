@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/afi0dnm.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="different-bg"> 
     <header>
         <a href="index.html"
           ><img src="images/logo-white.png" alt="Space Youths" class="header-logo"
@@ -22,7 +22,8 @@
           </ul>
         </nav>
       </header>
-    <section>
+      <div class="set-width">
+    <section class="iss-intro center">
       <h1>WELCOME TO THE INTERNATIONAL SPACE STATION!</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
@@ -42,10 +43,11 @@
         allowfullscreen
       ></iframe>
     </section>
-    <section>
+</div>
+    <section class="map-section center">
       <h2>THE ISS ORBITS THE EARTH IN JUST ABOUT 90 MINUTES</h2>
       <h3>HERE YOU CAN SEE WHERE IT IS RIGHT NOW</h3>
-      <img src="images/map.jpg" alt="World Map" />
+      <img src="images/map.jpg" alt="World Map" class="map-img"/>
     </section>
     <!-- <section>
       <h2>THE ISS GALLERY</h2>
@@ -67,52 +69,63 @@
       </p>
        Insert Images here
     </section> -->
-    <section>
+    <section class="fun-facts">
+        <div class="set-width center">
       <h2>FUN FACTS</h2>
-      <p>
+      <div class="flex ff-flex">
+      <p class="ff-flex-item">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
         odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
         quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
         mauris. Fusce
       </p>
-      <p>
+      <p class="ff-flex-item">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
         odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
         quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
         mauris. Fusce
       </p>
-      <p>
+      <p class="ff-flex-item"> 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
         odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
         quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
         mauris. Fusce
       </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-        odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-        quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-        mauris. Fusce
-      </p>
-      <video width="320" height="240" controls>
+      <video width="640" height="360" controls class="ff-flex-item ff-flex-item-grow">
         <source
           src="https://images-assets.nasa.gov/video/00%20ISS%20Facts%20and%20Figures%20-%20FINAL_10292015_1080_Youtube/00%20ISS%20Facts%20and%20Figures%20-%20FINAL_10292015_1080_Youtube~orig.mp4"
           type="video/mp4"
         />
       </video>
+      <p class="ff-flex-item">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+        odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+        quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+        mauris. Fusce
+      </p>
+      
+    </div>
     </section>
-    <section>
-        <h2>LIFE ON THE SPACE STATION</h2>
+    <section class="set-width center">
+        <h2 class="life-on-iss-headline">LIFE ON THE SPACE STATION</h2>
+        <div class="flex">
+            <div class="equal-flex life-on-iss-text">
         <h3>But how is it really to live on the space station?</h3>
         <p>Well, this Movie from NASA can show you a Little bit of how it is to live in space!
         </p>
         <p>NASA has a lot of great videos and Pictures on their own website, you should definitely check it out if you want to see more</p>
         <button class="blue-button"><a href="https://images.nasa.gov/">TAKE ME TO NASA!</a></button>
-        <video width="320" height="240" controls>
+        </div>
+        <div class="equal-flex">
+        <video width="320" height="240" controls class="life-on-iss-video">
             <source
               src="https://images-assets.nasa.gov/video/Life%20on%20Station%204_7_15/Life%20on%20Station%204_7_15~orig.mp4"
               type="video/mp4"
-            />
+            /></video>
+            </div>
+        </div>
     </section>
+    </div>
     <footer>
         <div class="flex-item">
           <img src="images/logo-white.png" alt="Space Youths" class="footer-logo" />
@@ -137,7 +150,6 @@
               <li><a href="https://global.jaxa.jp/">JAXA</a></li>
             </ul>
           </div>
-        </div>
       </footer>
   </body>
 </html>
