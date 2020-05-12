@@ -52,12 +52,18 @@ hr {
   text-align: center;
 }
 .center h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   margin: 0 1em 1em 1em;
 }
 .center p {
   margin: 1em 0 3em 0;
   padding: 2em;
+}
+.flex {
+  display: flex;
+}
+.equal-flex {
+  flex: 1 1 0px;
 }
 
 /* ------- Links & Navigation -------- */
@@ -73,9 +79,9 @@ li a {
   font-family: roboto, sans-serif;
   font-weight: 600;
 }
-li:hover {
+/* li:hover {
   transform: scale(1.2);
-}
+} */
 /* ------ Buttons -------- */
 a {
   text-decoration: none;
@@ -111,6 +117,10 @@ button a {
 .white-button:hover {
   background: rgba(109, 76, 128, 0.6);
 }
+.center-button {
+  display: block;
+  margin: 2em auto;
+}
 
 /* ----- Header --------- */
 header {
@@ -143,7 +153,6 @@ header {
 footer {
   background-color: #18242b;
   display: flex;
-
   justify-content: space-around;
 }
 .footer-logo {
@@ -219,4 +228,108 @@ h2 {
 .astronaut-text p {
   margin: 1em 0 3em 0;
   padding: 2em;
+}
+
+/* ----- All About Astronauts ---------- */
+.astronaut-intro {
+  width: 85%;
+  margin: 0 auto;
+}
+.how-to-become-bg {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.how-to-become {
+  color: #2f1f40;
+  width: 85%;
+  margin: 4em auto;
+}
+.how-to-become p {
+  margin: 2em auto;
+  width: 90%;
+}
+.astronaut-top-img {
+  width: 80%;
+  padding: 4em 0 4em 4em;
+}
+.astronaut-middle-img {
+  width: 90%;
+  padding-top: 20%;
+}
+.flex-order:nth-of-type(1) {
+  order: 2;
+}
+.how-to-become-text {
+  padding: 3em;
+}
+.how-to-become-text h2 {
+  margin: 2em;
+  font-size: 1.8em;
+}
+.how-to-become-text h3 {
+  margin: 2em;
+}
+.how-to-become-video {
+  width: 80%;
+  display: block;
+  margin: 4em auto;
+  padding-bottom: 4em;
+  padding-top: 1em;
+}
+.optimize {
+  width: 80%;
+  margin: 0 auto;
+}
+.optimize h2 {
+  font-size: 2em;
+  padding: 2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.optimize-vector {
+  width: 50%;
+  display: block;
+  margin: 1em 0 1em 45%;
+}
+.optimize-ul {
+  padding-top: 1.5em;
+}
+.optimize-ul li {
+  display: block;
+  font-family: roboto, sans-serif;
+  font-weight: 800;
+  font-size: 1.5em;
+  padding: 1em 0;
+}
+i {
+  font-size: 80%;
+  padding: 0 1em 1em 1em;
+}
+
+.nudge {
+  margin-left: -20%;
+}
+
+.working-in-space-bg {
+  background-color: #6cb5c8;
+  margin-top: 4em;
+  padding-bottom: 3em;
+}
+.working-in-space {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+}
+.working-in-space-img {
+  width: 80%;
+  padding-top: 30%;
+}
+.space-of-fame {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 4em;
+}
+.space-of-fame h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+  text-align: left;
 }
