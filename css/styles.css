@@ -405,3 +405,53 @@ i {
 .life-on-iss-video {
   width: 70%;
 }
+
+/* ------------------------ CONTACT ---------------------- */
+.contact {
+  background-color: rgba(24, 36, 43, 0.6);
+  width: 60%;
+  margin: 1em auto;
+  padding: 3em;
+}
+.contact h1 {
+  text-align: center;
+}
+.contact h2 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 0.5em;
+}
+fieldset {
+  border: none;
+}
+label {
+  font-weight: 600;
+}
+input {
+  width: 100%;
+  height: 2em;
+  border: none;
+  margin: 0.5em 0;
+  font-size: 110%;
+}
+.textarea {
+  height: 10em;
+}
+.form-button {
+  color: white;
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  background: rgba(255, 255, 255, 0);
+  border: 2px solid white;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 30%;
+  margin: 2em auto 0 auto;
+  display: block;
+}
+.form-button:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #18242b;
+}
