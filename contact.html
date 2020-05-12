@@ -31,24 +31,38 @@
         Don't worry, just send us an inquiry and we will get back to you as son
         as we can!
       </h2>
-      <form action="#" method="get">
+      <form action="#" id="contactForm">
         <fieldset>
           <label
             >NAME <br />
-            <input type="text" name="name"
+            <input type="text" id="name"
           /></label>
+          <div class="error" id="nameError">Please enter your name*</div>
           <br />
           <label
             >EMAIL <br />
-            <input type="text" name="email"
+            <input type="text" id="email"
           /></label>
+          <div class="error" id="emailError">
+            Please enter a valid email adress*
+          </div>
           <br />
           <label
             >MESSAGE <br />
-            <input type="textarea" name="message" class="textarea"
-          /></label>
+            <textarea id="message" class="textarea"></textarea>
+          </label>
+          <div class="error" id="messageError">
+            We want to hear more from you, please send us a longer message than
+            that!
+          </div>
           <br />
-          <input type="submit" name="send" value="SEND" class="form-button" />
+          <div id="submitMessage">
+            <h3>Thank you for contacting us!</h3>
+            <p>We will get back to you as soon as we can</p>
+          </div>
+          <button type="submit" name="send" value="SEND" id="formButton">
+            SEND
+          </button>
         </fieldset>
       </form>
     </section>
@@ -82,5 +96,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/contact.js"></script>
   </body>
 </html>

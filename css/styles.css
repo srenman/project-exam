@@ -437,8 +437,10 @@ input {
 }
 .textarea {
   height: 10em;
+  width: 100%;
+  border: none;
 }
-.form-button {
+#formButton {
   color: white;
   font-family: roboto, sans-serif;
   font-weight: 700;
@@ -450,8 +452,16 @@ input {
   width: 30%;
   margin: 2em auto 0 auto;
   display: block;
+  padding: 1em;
 }
-.form-button:hover {
+#formButton:hover {
   background: rgba(255, 255, 255, 0.8);
   color: #18242b;
+}
+.error {
+  display: none;
+}
+#submitMessage {
+  display: none;
+  text-align: center;
 }
