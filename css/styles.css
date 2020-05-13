@@ -352,6 +352,14 @@ i {
   font-weight: 600;
   text-align: left;
 }
+.astronaut-name {
+  color: white;
+  font-weight: 400;
+  transition-duration: 0.4s;
+}
+.astronaut-name:hover {
+  transform: scale(1.2);
+}
 .astronauts-container {
   display: flex;
   flex-wrap: wrap;

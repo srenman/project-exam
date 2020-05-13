@@ -25,7 +25,10 @@ function displayAstronauts(astronauts) {
 
   for (let i = 0; i < astronautsArray.length; i++) {
     console.log(astronautsArray[i].name);
-    newHTML += `<div><h4>${astronautsArray[i].name}</h4></div>`;
+
+    newHTML += `<div>
+                    <a href="astronaut-details.html?id=${astronautsArray[i].id}"><h4 class="astronaut-name">${astronautsArray[i].name}</h4></a>
+                </div>`;
   }
   container.innerHTML = newHTML;
 }
