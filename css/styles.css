@@ -370,6 +370,22 @@ i {
   width: 30%;
   margin: 0 auto;
 }
+/* ------------------------- ASTRONAUT DETAILS PAGE ---------------- */
+.inner-details {
+  display: flex;
+}
+.inner-details li {
+  padding: 1em;
+}
+.inner-details li:hover {
+  transform: none;
+  cursor: default;
+}
+#astronaut-profile-img {
+  width: 75%;
+  margin: 0 auto;
+  display: block;
+}
 /* ----------------------- ISS --------------------------------- */
 
 .iss-intro {

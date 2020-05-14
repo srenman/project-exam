@@ -24,8 +24,6 @@ function displayAstronauts(astronauts) {
   let newHTML = "";
 
   for (let i = 0; i < astronautsArray.length; i++) {
-    console.log(astronautsArray[i].name);
-
     newHTML += `<div>
                     <a href="astronaut-details.html?id=${astronautsArray[i].id}"><h4 class="astronaut-name">${astronautsArray[i].name}</h4></a>
                 </div>`;
