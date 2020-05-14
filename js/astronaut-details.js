@@ -41,7 +41,13 @@ async function getAstronautById() {
     const bio = document.querySelector("#bio");
     bio.innerHTML = json.bio;
   } catch (error) {
-    // Do something with error
+    const ifError = document.querySelector("#ifError");
+    const astronautDetailsSection = document.querySelector(
+      ".astronaut-details"
+    );
+    ifError.style.display = "block";
+    astronautDetailsSection.style.display = "none";
+
     console.log("error");
   } finally {
     console.log("the function is done");

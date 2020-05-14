@@ -400,6 +400,18 @@ i {
   margin: 2em auto;
   display: block;
 }
+#ifError {
+  display: none;
+  text-align: center;
+  padding: 10em 6em;
+}
+#ifError h1 {
+  font-size: 2em;
+  padding: 1em;
+}
+#ifError h2 {
+  font-size: 1em;
+}
 /* ----------------------- ISS --------------------------------- */
 
 .iss-intro {
