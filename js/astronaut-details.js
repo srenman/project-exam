@@ -10,44 +10,8 @@ async function getAstronautById() {
     const response = await fetch(url);
     const json = await response.json();
 
+    displayDetails(json);
     console.log(json);
-
-    // Changing the HTML
-    document.title = `Space youths | ${json.name}`;
-
-    const profilePicture = document.querySelector("#astronaut-profile-img");
-    if (json.profile_image === null) {
-      profilePicture.src = `./images/astronaut-white.png`;
-    } else {
-      profilePicture.src = json.profile_image;
-    }
-
-    profilePicture.alt = json.name;
-
-    const astronautName = document.querySelector("h1");
-    astronautName.innerHTML = json.name;
-
-    const date_of_birth = document.querySelector("#dob");
-    date_of_birth.innerHTML = json.date_of_birth;
-
-    const date_of_death = document.querySelector("#dod");
-    if (json.date_of_death === null) {
-      date_of_death.innerHTML = `Still alive, thankfully!`;
-    } else {
-      date_of_death.innerHTML = json.date_of_death;
-    }
-
-    const nationality = document.querySelector("#nationality");
-    nationality.innerHTML = json.nationality;
-
-    const agency = document.querySelector("#agency");
-    agency.innerHTML = json.agency.name;
-
-    const status = document.querySelector("#status");
-    status.innerHTML = json.status.name;
-
-    const bio = document.querySelector("#bio");
-    bio.innerHTML = json.bio;
   } catch (error) {
     const ifError = document.querySelector("#ifError");
     const astronautDetailsSection = document.querySelector(
@@ -64,33 +28,43 @@ async function getAstronautById() {
 
 getAstronautById();
 
-// function displayDetails(details) {
-//   const detailsContainer = document.querySelector(".astronaut-details");
-//   console.log(details);
+function displayDetails(json) {
+  document.title = `Space youths | ${json.name}`;
 
-//   newHTML = "<h1>TEST</h1>";
+  const profilePicture = document.querySelector("#astronaut-profile-img");
+  if (json.profile_image === null) {
+    profilePicture.src = `./images/astronaut-white.png`;
+  } else {
+    profilePicture.src = json.profile_image;
+  }
+  profilePicture.alt = json.name;
 
-//   `
-//  <section class="astronaut-details flex">
-//        <div class="astronaut-profile-img equal-flex">
-//          <img src="images/astronaut-white.png" alt="Profile Picture" />
-//        </div>
-//        <div class="equal-flex inner-details">
-//          <h1>${details.name}</h1>
-//          <div class="detail-attributes equal-flex">
-//
-//          </div>
-//           <div class="detail-results equal-flex">
-//             <ul>
-//                  <li>${details.date_of_birth}</li>
-//                  <li>${details.date_of_death}</li>
-//                  <li>${details.nationality}</li>
-//                  <li>${details.agency}</li>
-//                  <li>${details.status}</li>
-//              </ul>
-//           </div>
-//           <p>${details.bio}</p>
-//         </div>
-//       </section>`;
-//   detailsContainer.innerHTML = newHTML;
-// }
+  const astronautName = document.querySelector("h1");
+  astronautName.innerHTML = json.name;
+
+  const date_of_birth = document.querySelector("#dob");
+  date_of_birth.innerHTML = json.date_of_birth;
+
+  const date_of_death = document.querySelector("#dod");
+  if (json.date_of_death === null) {
+    date_of_death.innerHTML = `Still alive, thankfully!`;
+  } else {
+    date_of_death.innerHTML = json.date_of_death;
+  }
+
+  const nationality = document.querySelector("#nationality");
+  nationality.innerHTML = json.nationality;
+
+  const agency = document.querySelector("#agency");
+  if (json.agency === null) {
+    agency.innerHTML = `Unknown`;
+  } else {
+    agency.innerHTML = json.agency.name;
+  }
+
+  const status = document.querySelector("#status");
+  status.innerHTML = json.status.name;
+
+  const bio = document.querySelector("#bio");
+  bio.innerHTML = json.bio;
+}
