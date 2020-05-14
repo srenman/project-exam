@@ -16,7 +16,12 @@ async function getAstronautById() {
     document.title = `Space youths | ${json.name}`;
 
     const profilePicture = document.querySelector("#astronaut-profile-img");
-    profilePicture.src = json.profile_image;
+    if (json.profile_image === null) {
+      profilePicture.src = `./images/astronaut-white.png`;
+    } else {
+      profilePicture.src = json.profile_image;
+    }
+
     profilePicture.alt = json.name;
 
     const astronautName = document.querySelector("h1");
@@ -25,9 +30,12 @@ async function getAstronautById() {
     const date_of_birth = document.querySelector("#dob");
     date_of_birth.innerHTML = json.date_of_birth;
 
-    // Make if statement
     const date_of_death = document.querySelector("#dod");
-    date_of_death.innerHTML = json.date_of_death;
+    if (json.date_of_death === null) {
+      date_of_death.innerHTML = `Still alive, thankfully!`;
+    } else {
+      date_of_death.innerHTML = json.date_of_death;
+    }
 
     const nationality = document.querySelector("#nationality");
     nationality.innerHTML = json.nationality;
