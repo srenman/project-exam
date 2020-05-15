@@ -1,5 +1,6 @@
 const url = "https://spacelaunchnow.me/api/3.3.0/astronaut/?limit=24";
 
+// API Call
 async function fetchAstronauts() {
   try {
     const response = await fetch(url);
@@ -15,6 +16,7 @@ async function fetchAstronauts() {
 
 fetchAstronauts();
 
+// Display The Results
 function displayAstronauts(astronauts) {
   const astronautsArray = astronauts.results;
   console.log(astronautsArray);
@@ -30,3 +32,5 @@ function displayAstronauts(astronauts) {
   }
   container.innerHTML = newHTML;
 }
+
+// Show More

@@ -199,6 +199,13 @@ footer {
   border-right: 1px solid white;
 }
 /* ----------------------------------------- HOMEPAGE ------------------------------------ */
+#index-h1 {
+  opacity: 0;
+}
+#index-h1.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
 .top-section {
   text-align: center;
 }
@@ -207,12 +214,17 @@ h2 {
   font-size: 1.3em;
 }
 .homepage-headline {
-  margin: 2.5em;
+  margin: 2.2em;
 }
 .people-in-space-section {
   font-size: 0.8em;
   margin-top: 3em;
   line-height: 3em;
+}
+#who h4 {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 .hp-flex {
   display: flex;
