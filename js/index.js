@@ -1,13 +1,3 @@
-// H1 & H2 fadeins
-
-let headlineFadeIn = document.querySelector("#index-h1");
-
-function fadeIn() {
-  headlineFadeIn.classList("fade-in");
-}
-
-fadeIn();
-
 const url = "http://api.open-notify.org/astros.json";
 
 async function fetchApi() {
