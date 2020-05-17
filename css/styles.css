@@ -557,6 +557,9 @@ input {
   .white-button {
     font-size: 0.8em;
   }
+  .blue-button {
+    font-size: 0.8em;
+  }
   footer {
     display: block;
   }
@@ -577,6 +580,10 @@ input {
 
   .flex {
     display: block;
+  }
+  .center p {
+    margin: 1em 0 1em 0;
+    padding: 2em;
   }
 
   /* ---- Astronauts Page ---- */
@@ -613,5 +620,46 @@ input {
   .how-to-become-text {
     padding-top: 0;
     text-align: center;
+  }
+  .astronaut-details {
+    padding: 0 2em;
+  }
+
+  /*  --------------- ISS page ---------------- */
+  .iss-intro {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #iss-movie {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .ff-flex-item {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .ff-flex-item-grow {
+    width: 100%;
+    height: 50vh;
+    padding: 1em 0;
+  }
+  .life-on-iss-text {
+    width: 100%;
+    text-align: center;
+
+    font-size: 1em;
+  }
+  .life-on-iss-headline {
+    margin: 2em;
+    padding: 2em;
+  }
+  .life-on-iss-text p {
+    padding: 0.4em 0;
+  }
+  .life-on-iss-video {
+    width: 100%;
+    padding: 1em 0;
   }
 }
