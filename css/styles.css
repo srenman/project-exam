@@ -560,4 +560,58 @@ input {
   footer {
     display: block;
   }
+  .footer-links li {
+    padding: 1.5em 1.5em 0 0;
+    /* .flex-item {
+    display: block;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+  }
+  .right-border {
+    border-right: none;
+    border-bottom: 1px solid white;
+    padding-right: 0;
+  } */
+  }
+
+  .flex {
+    display: block;
+  }
+
+  /* ---- Astronauts Page ---- */
+  .working-in-space {
+    display: block;
+  }
+
+  .how-to-become-video {
+    width: 100%;
+    height: 50vh;
+    display: block;
+    margin: 4em auto;
+    padding: 1em;
+  }
+  .optimize-ul {
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .optimize-vector {
+    width: 40%;
+    display: block;
+    margin: 1em 0 1em 35%;
+  }
+  .working-in-space {
+    display: block;
+    text-align: center;
+  }
+
+  .working-in-space-img {
+    display: block;
+    margin: 0 auto;
+    padding: 3em 0 0 0;
+  }
+  .how-to-become-text {
+    padding-top: 0;
+    text-align: center;
+  }
 }
