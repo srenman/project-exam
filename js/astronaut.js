@@ -1,4 +1,4 @@
-const url = "https://spacelaunchnow.me/api/3.3.0/astronaut/?limit=24";
+const url = "https://spacelaunchnow.me/api/3.3.0/astronaut/?limit=100";
 
 // API Call
 async function fetchAstronauts() {
