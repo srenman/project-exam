@@ -223,27 +223,39 @@ h2 {
   margin: 0;
   padding: 0;
 }
-.hp-flex {
-  display: flex;
-  padding: 0;
-  margin: 8em 0 0 0;
+.iss-section {
+  background-image: url(../images/iss-vector-bg-fp.png);
+  height: 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-.iss-vector {
-  width: 50%;
-  position: relative;
-  left: -10%;
-  margin: 0;
+.iss-text {
+  width: 45%;
+  padding: 20% 2em 6em 2em;
+  text-align: center;
+  margin-left: 45%;
 }
-.astronaut-vector {
-  position: relative;
-  top: -50%;
-  width: 60%;
+.iss-text h2 {
+  font-size: 2em;
+  margin: 0 1em 1em 1em;
+}
+.iss-text p {
+  margin: 1em 0 3em 0;
+  padding: 2em;
+}
+.astronaut-rocks {
+  background-image: url(../images/astronaut-bg-wide.png);
+  height: 100%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .astronaut-text {
-  padding: 8em 2em 2em 2em;
+  width: 50%;
+  padding: 8em 2em 6em 2em;
   text-align: center;
-  position: relative;
-  left: 10%;
+  margin-left: 10%;
 }
 .astronaut-text h2 {
   font-size: 2em;
@@ -579,6 +591,24 @@ input {
   .display-desktop {
     display: none;
   }
+  .hide-tablet {
+    display: none;
+  }
+  .iss-section {
+    background-image: none;
+    margin-bottom: 6em;
+  }
+  .iss-vector {
+    display: block;
+    width: 60%;
+    margin: 6em auto;
+  }
+  .iss-text {
+    width: 60%;
+    padding: 3em;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 /* ------- Mobile styles -------- */
@@ -601,21 +631,9 @@ input {
   }
   footer {
     display: block;
-    margin-top: 3em;
   }
   .footer-links li {
     padding: 1.5em 1.5em 0 0;
-    /* .flex-item {
-    display: block;
-    margin: 0 auto;
-    padding: 2em;
-    text-align: center;
-  }
-  .right-border {
-    border-right: none;
-    border-bottom: 1px solid white;
-    padding-right: 0;
-  } */
   }
   .display-desktop {
     display: none;
@@ -627,6 +645,32 @@ input {
   .center p {
     margin: 1em 0 1em 0;
     padding: 2em;
+  }
+
+  /* ----- Homepage ------ */
+  .iss-section {
+    background-image: none;
+  }
+  .iss-vector {
+    display: block;
+    width: 60%;
+    margin: 6em auto;
+  }
+  .iss-text {
+    width: 60%;
+    padding: 3em;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .astronaut-rocks {
+    padding-bottom: 20%;
+  }
+  .astronaut-text {
+    width: 75%;
+    padding: 8em 1em 1em 1em;
+    text-align: center;
+    margin: 0 auto;
   }
 
   /* ---- Astronauts Page ---- */

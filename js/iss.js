@@ -10,7 +10,7 @@ async function fetchPosition() {
 
   let newCords = [longitude, latitude];
 
-  displayMap(newCords);
+  displayMap();
   updateMap(newCords);
 
   // console.log("long", longitude);
@@ -35,7 +35,7 @@ const map = new mapboxgl.Map({
 
 //map.on("load", displayMap(newCords));
 
-function displayMap(newCords) {
+function displayMap() {
   // Vector to map
   map.loadImage(
     "https://i.ibb.co/34vr09H/international-space-station-154273-640.png",
@@ -52,7 +52,7 @@ function displayMap(newCords) {
               type: "Feature",
               geometry: {
                 type: "Point",
-                coordinates: [newCords],
+                coordinates: [0, 0],
               },
             },
           ],
@@ -74,19 +74,16 @@ function displayMap(newCords) {
 
 // Update Map
 function updateMap(newCords) {
-  map.getSource("point", {
-    type: "geojson",
-    data: {
-      type: "FeatureCollection",
-      features: [
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: newCords,
-          },
+  map.getSource("point").setData({
+    type: "FeatureCollection",
+    features: [
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: newCords,
         },
-      ],
-    },
+      },
+    ],
   });
 }
