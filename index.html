@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <title>Homepage | Space Youths</title>
+    <script
+      src="https://kit.fontawesome.com/488e8f138f.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="https://use.typekit.net/afi0dnm.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -14,6 +18,7 @@
     <a href="index.html"
       ><img src="images/logo-white.png" alt="Space Youths" class="header-logo"
     /></a>
+    <i class="fas fa-bars fa-2x menu-icon"></i>
     <nav>
       <ul class="nav-links">
         <li class="active"><a href="index.html">HOME</a></li>
@@ -23,6 +28,14 @@
       </ul>
     </nav>
   </header>
+  <nav class="mobile-nav">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="astronauts.html">ALL ABOUT ASTRONAUTS</a></li>
+      <li><a href="iss.html">DISCOVER THE ISS</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+  </nav>
   <section class="top-section">
     <div class="homepage-headline">
       <h1>ARE YOU DREAMING ABOUT BECOMING AN ASTRONAUT?</h1>
@@ -48,7 +61,7 @@
     <img
       src="images/iss-vector-fp.png"
       alt="The international space station"
-      class="iss-vector hide-desktop"
+      class="iss-vector hide-desktop hide-tablet"
     />
     <div class="iss-text hp-text">
       <h2>THE INTERNATIONAL SPACE STATION</h2>
@@ -101,4 +114,5 @@
     </div>
   </footer>
   <script src="js/index.js"></script>
+  <script src="js/mobile-nav.js"></script>
 </body>

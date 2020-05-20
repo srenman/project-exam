@@ -12,20 +12,26 @@
   <body>
     <header>
       <a href="index.html"
-        ><img
-          src="images/logo-white.png"
-          alt="Space Youths"
-          class="header-logo"
+        ><img src="images/logo-white.png" alt="Space Youths" class="header-logo"
       /></a>
+      <i class="fas fa-bars fa-2x menu-icon"></i>
       <nav>
         <ul class="nav-links">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="astronauts.html" class="active">ALL ABOUT ASTRONAUTS</a></li>
+          <li class="active"><a href="index.html">HOME</a></li>
+          <li><a href="astronauts.html">ALL ABOUT ASTRONAUTS</a></li>
           <li><a href="iss.html">DISCOVER THE ISS</a></li>
           <li><a href="contact.html">CONTACT US</a></li>
         </ul>
       </nav>
     </header>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="astronauts.html">ALL ABOUT ASTRONAUTS</a></li>
+        <li><a href="iss.html">DISCOVER THE ISS</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
     <section class="astronaut-intro flex">
       <div class="equal-flex">
         <img
@@ -206,5 +212,6 @@
       </div>
     </footer>
     <script src="js/astronaut.js"></script>
+    <script src="js/mobile-nav.js"></script>
   </body>
 </html>
