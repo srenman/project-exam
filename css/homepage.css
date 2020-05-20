@@ -1,0 +1,88 @@
+.show1 {
+  opacity: 0;
+  margin: 1.5em 0;
+  transition: all 1.25s ease-in;
+}
+.show2 {
+  opacity: 0;
+  transition: all 1.25s ease-in;
+}
+.show3 {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+.show4 {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+.transition {
+  opacity: 1;
+}
+.transition2 {
+  opacity: 1;
+}
+.transition3 {
+  opacity: 1;
+}
+.top-section {
+  text-align: center;
+}
+.top-section h1,
+h2 {
+  font-size: 1.3em;
+}
+.homepage-headline {
+  margin: 2.2em;
+}
+.people-in-space-section {
+  font-size: 0.8em;
+  margin-top: 3em;
+  line-height: 3em;
+}
+#who h4 {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+.iss-section {
+  background-image: url(../images/iss-vector-bg-fp.png);
+  height: 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.iss-text {
+  width: 45%;
+  padding: 20% 2em 6em 2em;
+  text-align: center;
+  margin-left: 45%;
+}
+.iss-text h2 {
+  font-size: 2em;
+  margin: 0 1em 1em 1em;
+}
+.iss-text p {
+  margin: 1em 0 3em 0;
+  padding: 2em;
+}
+.astronaut-rocks {
+  background-image: url(../images/astronaut-bg-wide.png);
+  height: 100%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.astronaut-text {
+  width: 50%;
+  padding: 8em 2em 6em 2em;
+  text-align: center;
+  margin-left: 10%;
+}
+.astronaut-text h2 {
+  font-size: 2em;
+  margin: 0 1em 1em 1em;
+}
+.astronaut-text p {
+  margin: 1em 0 3em 0;
+  padding: 2em;
+}

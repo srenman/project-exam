@@ -1,0 +1,49 @@
+.go-back {
+  color: white;
+  margin: 2em 4em;
+  transition-duration: 0.4s;
+}
+.go-back a:hover {
+  text-decoration: underline;
+}
+.astronaut-details {
+  padding: 2em;
+}
+.astronaut-details h1 {
+  margin: 2em 0;
+}
+.inner-details {
+  line-height: 2em;
+}
+.inner-details h2 {
+  font-weight: 600;
+  margin: 0 1rem 0 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.inner-details h3 {
+  display: inline-block;
+  font-weight: 400;
+}
+.inner-details li:hover {
+  transform: none;
+  cursor: default;
+}
+#astronaut-profile-img {
+  width: 75%;
+  margin: 2em auto;
+  display: block;
+}
+#ifError {
+  display: none;
+  text-align: center;
+  padding: 10em 6em;
+}
+#ifError h1 {
+  font-size: 2em;
+  padding: 1em;
+}
+#ifError h2 {
+  font-size: 1em;
+}

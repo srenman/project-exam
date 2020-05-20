@@ -1,0 +1,55 @@
+.iss-intro {
+  width: 50%;
+  padding: 3em 0 3em 0;
+}
+.map-section {
+  background-color: #ffffff;
+  color: #18242b;
+  padding-top: 4em;
+}
+.map {
+  height: 500px;
+  width: 100%;
+}
+.map-img {
+  width: 100%;
+}
+.fun-facts {
+  background-color: #6cb5c8;
+}
+.ff-flex {
+  flex-wrap: wrap;
+}
+.ff-flex-item-grow {
+  flex-grow: 2;
+  padding: 0;
+  margin: 0;
+}
+.ff-flex-item {
+  width: 25%;
+  padding: 2em;
+}
+.life-on-iss-headline {
+  margin: 4em;
+  padding: 3em;
+}
+.life-on-iss-text {
+  text-align: left;
+  font-size: 0.9em;
+  width: 60%;
+  margin: 1em auto;
+}
+.life-on-iss-text h3 {
+  font-weight: 600;
+  padding-bottom: 2em;
+}
+.life-on-iss-text p {
+  padding: 0;
+}
+.life-on-iss-text button {
+  display: block;
+  margin: 1em auto;
+}
+.life-on-iss-video {
+  width: 70%;
+}
