@@ -203,6 +203,32 @@ footer {
 }
 /* ----------------------------------------- HOMEPAGE ------------------------------------ */
 
+.show1 {
+  opacity: 0;
+  margin: 1.5em 0;
+  transition: all 1.25s ease-in;
+}
+.show2 {
+  opacity: 0;
+  transition: all 1.25s ease-in;
+}
+.show3 {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+.show4 {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+.transition {
+  opacity: 1;
+}
+.transition2 {
+  opacity: 1;
+}
+.transition3 {
+  opacity: 1;
+}
 .top-section {
   text-align: center;
 }
@@ -372,6 +398,9 @@ i {
   font-size: 1.1em;
   font-weight: 600;
   text-align: left;
+}
+.is-active {
+  display: block;
 }
 .astronaut-name {
   color: white;
@@ -639,7 +668,7 @@ input {
     display: block;
   }
   .mobile-nav ul {
-    margin: 0 auto 50% auto;
+    margin: 0 auto 60% auto;
   }
   .nav-links {
     display: none;

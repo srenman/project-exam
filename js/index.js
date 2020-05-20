@@ -1,3 +1,32 @@
+// LOADING EFFECTS
+
+const showFirst = document.querySelector(".show1");
+const showSecond = document.querySelector(".show2");
+const showThird = document.querySelector(".show3");
+const showFourth = document.querySelector(".show4");
+
+function loadFirst() {
+  showFirst.classList.add("transition");
+}
+
+function loadSecond() {
+  showSecond.classList.add("transition");
+}
+
+function loadThird() {
+  showThird.classList.add("transition");
+}
+function loadFourth() {
+  showFourth.classList.add("transition");
+}
+
+setTimeout(loadFirst, 500);
+setTimeout(loadSecond, 2000);
+setTimeout(loadThird, 3200);
+setTimeout(loadFourth, 3200);
+
+// API CALL
+
 const url = "http://api.open-notify.org/astros.json";
 
 async function fetchApi() {
